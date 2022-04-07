@@ -3,12 +3,14 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'RNFirebaseFacebookAuth' do
+target 'cedmob' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'RNFirebaseFacebookAuthTests' do
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+  target 'cedmobTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +25,10 @@ target 'RNFirebaseFacebookAuth' do
   end
 end
 
-target 'RNFirebaseFacebookAuth-tvOS' do
-  # Pods for RNFirebaseFacebookAuth-tvOS
+target 'cedmob-tvOS' do
+  # Pods for cedmob-tvOS
 
-  target 'RNFirebaseFacebookAuth-tvOSTests' do
+  target 'cedmob-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

@@ -1,4 +1,4 @@
-package com.rnfirebasefacebookauth;
+package com.cedmob;
 
 import com.facebook.react.ReactActivity;
 
@@ -11,6 +11,6 @@ public class MainActivity extends ReactActivity {
 
   @Override
   protected String getMainComponentName() {
-    return "RNFirebaseFacebookAuth";
+    return "cedmob";
   }
 }
